@@ -1,14 +1,10 @@
 # RIOT-rs
-[![Build Status][build-badge]][build-info]
-[![Documentation][doc-badge]][documentation-mdbook]
 
 
 > Rust & RIOT combined for ergonomic embedded development
 
 RIOT-rs is an operating system for secure, memory-safe, low-power Internet of Things (IoT).
-RIOT-rs is based on Rust from the ground up, and uses formal verification
-for critical modules. To learn more about our motivations, see this
-[manifesto](https://future-proof-iot.github.io/RIOT-rs/dev/docs/book/manifesto.html).
+RIOT-rs is based on Rust from the ground up.
 
 Hardware targets include varieties of IoT hardware based on 
 32-bit microcontroller architectures (such as Cortex-M, RISC-V).
@@ -17,15 +13,13 @@ In practice, RIOT-rs builds on top of [Embassy](https://github.com/embassy-rs/em
 Compared to what [Embassy](https://github.com/embassy-rs/embassy) already provides,
 RIOT-rs brings additional value in terms of 
 abstraction, operating system functionalities, 
-and integration for a (curated) set of software modules, tools and libraries, as well as 
-a stronger focus on cybersecurity and formal verification.
+and integration for a (curated) set of software modules, tools and libraries.
  
 In particular, RIOT-rs aims to combine:
 
 - **application code portability** across all supported hardware, via consistent memory/energy efficient APIs;
 - **async programming** paradigms, based on [Embassy](https://github.com/embassy-rs/embassy);
-- **preemptive scheduler** programming paradigms, based on formally verified modules using [hax](https://hacspec.org/blog/posts/hax-v0-1/);
-- **booting & update security**, via measured boot and secure software updates, using formally verified modules.
+- **preemptive scheduler** programming paradigms;
 
 Overall, RIOT-rs gives you a 'batteries-included' experience, on par
 with [RIOT](https://github.com/RIOT-OS/RIOT). 
