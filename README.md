@@ -1,7 +1,7 @@
 # RIOT-rs
 [![Build Status][build-badge]][build-info]
 [![Documentation][doc-badge]][documentation-mdbook]
-[![Matrix][matrix-badge]][matrix-link]
+
 
 > Rust & RIOT combined for ergonomic embedded development
 
@@ -85,8 +85,6 @@ example](https://github.com/future-proof-iot/RIOT-rs/tree/main/examples/hello-wo
 1. Compile, flash and the hello-world example using `probe-rs run`
 
         laze -C examples/hello-world build -b nrf52840dk run
-
-![Example](./doc/hello-world_render.svg)
 
 <details>
 <summary> (might fail if the flash is locked, click here for unlocking instructions) </summary>
